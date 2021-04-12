@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+<p><%= @product.name %></p>
+<p>Associated ingredients: <%= @product.ingredients.map {|i| i.name}.join(', ') %></p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
